@@ -27,7 +27,7 @@ A self-hosted API tunnel that provides access to Grok3 through a simple REST int
 
 ## Authentication
 
-To use the API, you need to provide your Grok cookie string. You can get this by:
+To use the API, you need your Grok cookie string which will serve as your API key in most client applications. Here's how to get it:
 
 1. Go to [Grok.com](https://grok.com)
 2. Log in to your account (Grok account required)
@@ -40,7 +40,9 @@ To use the API, you need to provide your Grok cookie string. You can get this by
 
 Minimum cookie requirements: `sso` and `sso-rw`
 
-You can provide the cookie string in one of two ways:
+> **Important**: In most API clients (like ChatGPT, Claude, etc.), you should paste your cookie string directly into the API Key field. The cookie string IS your API key.
+
+You can also provide the cookie string in your requests in one of two ways:
 
 1. **Authorization Header (Recommended)**
    ```bash
@@ -53,6 +55,13 @@ You can provide the cookie string in one of two ways:
      "cookie_string": "your_cookie_string_here"
    }
    ```
+
+### Client Setup Example
+
+When setting up in clients like ChatGPT or Claude:
+1. Provider name: `Grok3`
+2. API Base URL: `http://localhost:11435/api`
+3. API Key: `your_cookie_string_here` (ex. sso-rw=eyJhbGc...)
 
 ## Usage
 
@@ -221,11 +230,18 @@ The API supports various configuration options through its request payload. Here
 
 ## Support the Project
 
-If you find this project helpful, please consider supporting its development by sponsoring me on GitHub:
+<div align="center">
 
-[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-%E2%9D%A4-red?logo=github&style=for-the-badge)](https://github.com/sponsors/TheSethRose)
+[![Support my work](https://raw.githubusercontent.com/intergrav/devins-badges/v3/assets/cozy/donate/github-sponsors_vector.svg)](https://github.com/sponsors/TheSethRose/sponsorships?sponsor=TheSethRose&tier_id=263225)
 
-Your sponsorship helps maintain and improve this project, ensuring it remains a valuable tool for the community.
+</div>
+
+Took guts and caffeine to crank it out. Now, I'm asking YOU to back me. $5 a month. That's it. Pocket change to keep me fueled and slamming out more projects like this.
+
+Think about it—what's $5? A shitty coffee? Or a ticket to more tools that actually DO something? I'm not here to beg; I'm here to BUILD. Support me, and I'll keep the good stuff coming. No fluff, just results.
+
+Sponsor me. Let's make more noise together. 🚀
+(written by Grok3)
 
 ## License
 

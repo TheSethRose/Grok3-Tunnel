@@ -51,14 +51,8 @@ def parse_cookie_string(cookie_string):
 
     return cookies
 
-# Get cookie values from environment variables
-COOKIE_STRING = os.getenv("GROK_COOKIE_STRING", "")
-DEFAULT_COOKIES = parse_cookie_string(COOKIE_STRING)
-
-# If no cookie string is provided, use empty cookies (will fail gracefully)
-if not DEFAULT_COOKIES:
-    print("Warning: No GROK_COOKIE_STRING provided in environment variables.")
-    DEFAULT_COOKIES = {}
+# Initialize empty default cookies (authentication required via API)
+DEFAULT_COOKIES = {}
 
 class ChatMessage(BaseModel):
     role: str
@@ -638,6 +632,6 @@ async def generate(request: GenerateRequest, http_request: Request):
     return await chat_completion(chat_request, http_request)
 
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", "11435"))
+    port = 11435
     logger.info(f"Starting Grok3 API Server on port {port}")
     uvicorn.run(app, host="0.0.0.0", port=port)
