@@ -106,9 +106,9 @@ class GrokClient:
         enable_search = False
         enable_reasoning = False
 
-        # Check for prefixes
-        has_search = "@search" in message
-        has_reason = "@reason" in message
+        # Check for prefixes ONLY at the beginning of the message
+        has_search = message.startswith("@search")
+        has_reason = message.startswith("@reason")
 
         # Only allow one prefix at a time, prioritizing @search if both are present
         if has_search:

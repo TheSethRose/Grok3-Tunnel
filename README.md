@@ -232,17 +232,18 @@ The API supports various configuration options through its request payload. Here
 
 <div align="center">
 
-[![Support my work](https://raw.githubusercontent.com/intergrav/devins-badges/v3/assets/cozy/donate/github-sponsors_vector.svg)](https://github.com/sponsors/TheSethRose/sponsorships?sponsor=TheSethRose&tier_id=263225)
+[![Support on GitHub](https://img.shields.io/badge/Sponsor-Support%20my%20work-brightgreen?style=for-the-badge&logo=github)](https://github.com/sponsors/TheSethRose/sponsorships?sponsor=TheSethRose&tier_id=263225)
 
 </div>
 
-Took guts and caffeine to crank it out. Now, I'm asking YOU to back me. $5 a month. That's it. Pocket change to keep me fueled and slamming out more projects like this.
+Took guts and caffeine to crank this out. Now, I'm asking YOU to back me. $5 a month. That's it.
+Pocket change to keep me fueled and slamming out more projects like this.
 
-Think about it—what's $5? A shitty coffee? Or a ticket to more tools that actually DO something? I'm not here to beg; I'm here to BUILD. Support me, and I'll keep the good stuff coming. No fluff, just results.
+Think about it — what's $5? A shitty coffee? Or a ticket to more tools that actually DO something?
+I'm not here to beg; I'm here to BUILD. Support me, and I'll keep the good stuff coming. No fluff.
 
-Sponsor me. Let's make more noise together. 🚀
-(written by Grok3)
+Sponsor me. Let's make more noise together. 🚀 (written by Grok3)
 
 ## License
 
-MIT
+[MIT](LICENSE.md)
