@@ -20,6 +20,30 @@ This tool is intended for personal use only. Users are responsible for ensuring 
 
 The creator of this project is not responsible for any misuse of this tool or violations of xAI's Terms of Service.
 
+## Support the Project
+
+<div align="center">
+
+[![Support on GitHub](https://img.shields.io/badge/Sponsor-Support%20my%20work-brightgreen?style=for-the-badge&logo=github)](https://github.com/sponsors/TheSethRose)
+
+</div>
+
+Took guts and caffeine to crank this out. Now, I'm asking YOU to back me. $5 a month. That's it.
+Pocket change to keep me fueled and slamming out more projects like this.
+
+Think about it — what's $5? A shitty coffee? Or a ticket to more tools that actually DO something?
+I'm not here to beg; I'm here to BUILD. Support me, and I'll keep the good stuff coming. No fluff.
+
+Sponsor me. Let's make more noise together. 🚀 (written by Grok3)
+
+## Quick Start
+
+1. Clone this repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Get your Grok cookie string (see [Authentication](#authentication) section)
+4. Start the server: `python server.py`
+5. The API is available at `http://localhost:11435/api`
+
 ## Features
 
 - Simple REST API for interacting with Grok3
@@ -82,9 +106,6 @@ When setting up in clients like ChatGPT or Claude:
 3. API Key: `your_cookie_string_here` (ex. sso-rw=eyJhbGc...)
 
 ## Usage
-
-1. Start the server: `python server.py`
-2. The server will be available at `http://localhost:11435/api`
 
 ### Special Prefixes for Advanced Features
 
@@ -215,6 +236,13 @@ curl http://localhost:11435/api/generate \
   }'
 ```
 
+### Available Endpoints
+
+- `/api/chat/completions` - Chat completions API
+- `/api/chat` - Legacy endpoint for backward compatibility
+- `/api/models` - List available models (only returns Grok-3)
+- `/api/generate` - Generate API for simple text completion
+
 ### Advanced Configuration
 
 The API supports various configuration options through its request payload. Here are the key parameters and their effects:
@@ -239,29 +267,40 @@ The API supports various configuration options through its request payload. Here
 - `toolOverrides`: Fine-tune available tools
 - `forceConcise`: Request shorter responses
 
-## Endpoints
+## Contributing
 
-- `/api/chat/completions` - Chat completions API
-- `/api/chat` - Legacy endpoint for backward compatibility
-- `/api/models` - List available models (only returns Grok-3)
-- `/api/generate` - Generate API for simple text completion
+### Ways to Contribute
 
-## Support the Project
+- **Report Bugs**: Found something that doesn't work? Open an issue with detailed steps to reproduce.
+- **Suggest Features**: Have ideas for improvements? I'd love to hear them.
+- **Submit Pull Requests**: Code contributions are always welcome. Feel free to fork the repo and submit PRs.
+- **Documentation**: Help improve or clarify the documentation.
+- **Share Use Cases**: Let me know how you're using this tool in interesting ways.
 
-<div align="center">
+### Development Guidelines
 
-[![Support on GitHub](https://img.shields.io/badge/Sponsor-Support%20my%20work-brightgreen?style=for-the-badge&logo=github)](https://github.com/sponsors/TheSethRose)
+- Keep it simple and maintainable
+- Test your changes thoroughly
+- Respect the existing code style
+- Document any new functionality
 
-</div>
-
-Took guts and caffeine to crank this out. Now, I'm asking YOU to back me. $5 a month. That's it.
-Pocket change to keep me fueled and slamming out more projects like this.
-
-Think about it — what's $5? A shitty coffee? Or a ticket to more tools that actually DO something?
-I'm not here to beg; I'm here to BUILD. Support me, and I'll keep the good stuff coming. No fluff.
-
-Sponsor me. Let's make more noise together. 🚀 (written by Grok3)
+If you're unsure about anything, just open an issue to start the conversation. All skill levels are welcome - whether you're fixing a typo or implementing a major feature.
 
 ## License
 
-[MIT](LICENSE.md)
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+The MIT License is a permissive license that allows for reuse with few restrictions. It permits users to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided that the original copyright notice and permission notice appear in all copies.
+
+### What this means for you:
+- You can use this code for personal or commercial projects
+- You can modify the code as needed
+- You must include the original license and copyright notice
+- The software is provided "as is" without warranty
+
+### Copyright Notice
+Copyright (c) 2024 Seth Rose - applies only to the original code implementation of this API tunnel.
+
+This copyright applies solely to the original code and implementation created for this project, not to any xAI/Grok intellectual property, APIs, or services. This project is an unofficial interface and does not claim any rights to xAI's proprietary technology, services, or branding.
+
+Users must comply with xAI's Terms of Service when using this tool to access Grok services.
