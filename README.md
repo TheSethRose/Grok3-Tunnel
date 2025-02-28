@@ -232,7 +232,7 @@ The API supports various configuration options through its request payload. Here
 
 <div align="center">
 
-[![Support on GitHub](https://img.shields.io/badge/Sponsor-Support%20my%20work-brightgreen?style=for-the-badge&logo=github)](https://github.com/sponsors/TheSethRose/sponsorships?sponsor=TheSethRose&tier_id=263225)
+[![Support on GitHub](https://img.shields.io/badge/Sponsor-Support%20my%20work-brightgreen?style=for-the-badge&logo=github)](https://github.com/sponsors/TheSethRose)
 
 </div>
 
