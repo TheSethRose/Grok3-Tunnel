@@ -2,6 +2,24 @@
 
 A self-hosted API tunnel that provides access to Grok3 through a simple REST interface.
 
+## ⚠️ Important Disclaimer
+
+**Use at your own risk. Not a polished product.**
+
+1. This is an **unofficial** API tunnel, fragile AF, and will likely break with any Grok updates.
+2. Worth noting that I didn't code this - Grok did technically. 😅
+3. It DOES create the chats in Grok's web history - all interactions are visible in your Grok account.
+4. This project is not affiliated with, endorsed by, or sponsored by xAI, Grok, or any of their affiliates.
+
+This tool is intended for personal use only. Users are responsible for ensuring their use of this tool complies with xAI's [Terms of Service](https://x.ai/legal/terms-of-service). In particular, please note that:
+
+1. You must have a valid Grok account to use this tool
+2. You are responsible for all activities conducted through this API
+3. Commercial use may be subject to additional restrictions
+4. This tool should not be used to develop competing models or services
+
+The creator of this project is not responsible for any misuse of this tool or violations of xAI's Terms of Service.
+
 ## Features
 
 - Simple REST API for interacting with Grok3
