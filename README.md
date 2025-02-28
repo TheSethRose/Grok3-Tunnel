@@ -1,6 +1,6 @@
 # Grok3 Tunnel
 
-A self-hosted API tunnel that provides access to Grok3 through a simple REST interface.
+An unofficial (self-hosted) API tunnel that provides access to Grok3 through a simple REST interface.
 
 ## ⚠️ Important Disclaimer
 
